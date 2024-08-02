@@ -21,20 +21,6 @@ DESCRIBE boo.users;
 
 /* Daten */
 -- Besser: PWDs verschlüsselt mit SHA1! 
-<<<<<<< HEAD
-
-INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
-VALUES ('johndoe123', 'Doe', 'John', SHA1('1234'));
-
-INSERT INTO boo.users (userName, familyName, firstName, userPwd)  
-VALUES ('emilybrown22', 'Brown', 'Emily', SHA1('7#Dx'));
-
-INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
-VALUES ('michaelsmith7', 'Smith', 'Michael', SHA1('user1234'));
-
-/* Inhalte : Ergebnistabelle */
-SELECT * FROM boo.users;
-=======
 INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
 VALUES ('johndoe123', 'Doe', 'John', SHA1('1234'));
 
@@ -46,7 +32,6 @@ VALUES ('michaelsmith7', 'Smith', 'Michael',SHA1('user1234'));
 
 /* Inhalte : Ergebnistabelle */
 -- SELECT * FROM boo.users;
->>>>>>> e5d83c97f4910fd7a6f785630728910c646c9af9
 
 /* Änderungen an bestehender Tabelle / Struktur*/
 ALTER TABLE
@@ -55,20 +40,6 @@ ADD
     userPLZ VARCHAR(5) NOT NULL DEFAULT "00000"
 ;
 
-<<<<<<< HEAD
-/* Struktur */
-DESCRIBE boo.users;
-SELECT * FROM boo.users;
-
-/*Update von Daten */
--- UPDATE boo.users SET userPLZ = "70367";
-UPDATE boo.users SET userPLZ = "70367" WHERE id = 1;
-UPDATE boo.users SET userPLZ = "70368" WHERE firstName = "Emily";
-UPDATE boo.users SET userPLZ = "70369" WHERE familyName = "Smith";
-
-
-SELECT * FROM boo.users;
-=======
 /* Struktur + Inhalt */
 DESCRIBE boo.users;
 SELECT * FROM boo.users;
@@ -81,4 +52,3 @@ UPDATE boo.users SET userPLZ = "70368" WHERE firstName = 'Emily';
 UPDATE boo.users SET userPLZ = "70369" WHERE familyName = 'Smith';
 
 SELECT * FROM boo.users;
->>>>>>> e5d83c97f4910fd7a6f785630728910c646c9af9

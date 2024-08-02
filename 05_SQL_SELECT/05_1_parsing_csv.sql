@@ -28,7 +28,7 @@ DESCRIBE stocks.ccc;
 
 -- CSV-Datei parsen
 -- LOAD DATA LOCAL INFILE "05_SQL_SELECT/data/ccc_dez_2019.csv"
-LOAD DATA LOCAL INFILE "C:\\Users\\micro\\Desktop\\WB_DB\\01_DB_work\\05_SQL_SELECT\\data\\ccc_dez_2019.csv"
+LOAD DATA LOCAL INFILE "C:\\Users\\CC-Student\\Documents\\WB_SQL\\01_DB_work\\05_SQL_SELECT\\data\\ccc_dez_2019.csv"
 INTO TABLE stocks.ccc
 FIELDS TERMINATED BY ";" 
 LINES TERMINATED BY "\n" 

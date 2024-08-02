@@ -26,17 +26,10 @@ CREATE TABLE IF NOT EXISTS boo.test
 DESCRIBE boo.test;
 
 /* ----- Daten ------- */
-<<<<<<< HEAD
-INSERT INTO boo.test(name,age) VALUES ("Grizabella",29);
-INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
-INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
-INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
-=======
 -- INSERT INTO boo.test(name,age) VALUES ("Grizabella",29);
 -- INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
 -- INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
 -- INSERT INTO boo.test(age,name) VALUES (35,"Alonzo");
->>>>>>> e5d83c97f4910fd7a6f785630728910c646c9af9
 
 
 -- /* ---- Inhalte der Tabelle anzeigen ---- */
