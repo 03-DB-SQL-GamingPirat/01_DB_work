@@ -15,7 +15,10 @@ CREATE TABLE IF NOT EXISTS boo.users
 DESCRIBE boo.users;
 
 /* Daten */
+<<<<<<< HEAD
 
+=======
+>>>>>>> e5d83c97f4910fd7a6f785630728910c646c9af9
 INSERT INTO boo.users (userName, familyName, firstName) 
 VALUES ('johndoe123', 'Doe', 'John');
 

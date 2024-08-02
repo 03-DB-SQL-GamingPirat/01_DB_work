@@ -17,6 +17,7 @@ DESCRIBE boo.users;
 
 /* Daten */
 -- Nachteil: PWDs liegen offen! 
+<<<<<<< HEAD
 
 INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
 VALUES ('johndoe123', 'Doe', 'John', '1234');
@@ -27,6 +28,16 @@ VALUES ('emilybrown22', 'Brown', 'Emily', '7#Dx');
 INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
 VALUES ('michaelsmith7', 'Smith', 'Michael', 'user1234');
 
+=======
+INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
+VALUES ('johndoe123', 'Doe', 'John', '1234');
+
+INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
+VALUES ('emilybrown22', 'Brown', 'Emily', '7#Dx');
+
+INSERT INTO boo.users (userName, familyName, firstName, userPwd) 
+VALUES ('michaelsmith7', 'Smith', 'Michael','user1234');
+>>>>>>> e5d83c97f4910fd7a6f785630728910c646c9af9
 
 /* Inhalte : Ergebnistabelle */
 SELECT * FROM boo.users;
