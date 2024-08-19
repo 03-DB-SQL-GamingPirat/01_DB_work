@@ -19,7 +19,7 @@ SELECT
 FROM stocks.ccc
 #ggf. Restriktionen
 LIMIT 10;
-*/
+
 
 -- UPPER() --> alles in Großbuchstaben
 /*
@@ -29,7 +29,7 @@ SELECT
 FROM stocks.ccc
 #ggf. Restriktionen
 LIMIT 10;
-*/
+
 
 
 -- LOWER() --> alles in Kleinbuchstaben (zb. bei mail-Adressen)
@@ -62,11 +62,11 @@ LIMIT 20;
 SELECT
 	ticker AS "SYM",
     c_name "Unternehmen",
-    replace(c_name,"Inc.","Incorporated") AS "Incorporated"
-    #replace(c_name,"Corp.","Corporation") AS "Corporation"
+    -- replace(c_name,"Inc.","Incorporated") AS "Incorporated"
+    replace(c_name,"Corp.","Corporation") AS "Corporation"
 FROM stocks.ccc
-WHERE c_name LIKE "%Inc."
-#WHERE c_name LIKE "%Corp."
+-- WHERE c_name LIKE "%Inc."
+WHERE c_name LIKE "%Corp."
 LIMIT 20;
 */
 

@@ -40,7 +40,7 @@ FROM stocks.ccc
 
 -- Wieviele VERSCHIEDENE Branchen gibt es 
 -- in den jeweiligen Industriesektoren?
-/*
+/**/
 SELECT
     sector Industriesektoren, -- nicht aggregiert / organisch
     count(DISTINCT industry) AS Branchen -- aggregiert / durch eine Fkt. entstanden
@@ -50,4 +50,3 @@ GROUP BY sector -- bei Kombination organisch /aggr.
 HAVING Branchen > 10 -- Filter in aggr. Felder / nach GROUP
 ORDER by Branchen DESC
 ;
-*/
